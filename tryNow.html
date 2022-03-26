@@ -1,0 +1,266 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try Now</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/Favicon/favicon-16x16.png">
+    <link rel="manifest" href="./images/Favicon/site.webmanifest">
+    <link rel="mask-icon" href="./images/Favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#000000">
+
+
+    <link rel="stylesheet" href="./tryNow.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/419c713afb.js"></script>
+    <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
+    <script src="https://unpkg.com/resize-observer-polyfill@1.5.0/dist/ResizeObserver.js"></script>
+<body>
+
+
+<section id="title">
+  <div class="container-fluid">
+  
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+    <div class="collapse navbar-collapse order-lg-1 order-3 navigation-menu">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="./about.html">About <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./events.html">Events</a>
+          </li>
+        </ul>
+      </div>
+    <a class="navbar-brand order-1 mr-lg-0" href="./index.html">
+        <img src="./images/MainLogo.png" width="90px"  alt="Art AR Logo">
+    </a>
+    <button class="navbar-toggler order-2" type="button" data-toggle="collapse" data-target=".navigation-menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="icon-bar top-bar"></span>
+      <span class="icon-bar middle-bar"></span>
+      <span class="icon-bar bottom-bar"></span>
+      <span class="sr-only">Toggle navigation</span>
+    </button>      
+    <div class="collapse navbar-collapse order-lg-3 order-4 navigation-menu">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item ">
+          <a class="nav-link" href="./news.html">News <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Try Now</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+<!-- Navigation Bar -->
+
+    <!-- Section 3 and 3d model render-->
+
+    <section>
+      <div class="container gap">
+        <h1 class="headingda">Try Now !</h1>
+          <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-4  para-section3" >
+                <div id="card">
+                    <model-viewer src="./Models/FinalModels/compressed.glb"
+                      ios-src="cemetery_Angel_-_Miller.usdz"
+                      poster="./Models/Posters/angel.png"
+                      alt="A 3D model of an Angel"
+                      shadow-intensity="1"
+                      camera-controls
+                      auto-rotate ar-placement="floor" ar ar-modes="scene-viewer quick-look">
+                    </model-viewer>                  
+                    <section class="attribution">
+                      <span class="desc">
+                          <h2>Guardian Angel</h1>
+                          <p>A guardian angel is a type of angel that is assigned to protect and guide a particular person, group or nation. Belief in tutelary beings can be traced throughout all antiquity.</p>
+                      </span>
+                    </section>                  
+                  </div>
+              </div>
+    
+              <div class="col-sm-12 col-md-12 col-lg-4 ">
+                <div id="card">
+                  <model-viewer src="./Models/FinalModels/final_sanPedro.glb"
+                    ios-src=""
+                    poster="./Models/Posters/SanPerro.png"
+                    alt="A 3D model of San Perro"
+                    shadow-intensity="1"
+                    camera-controls
+                    auto-rotate ar-placement="floor" ar ar-modes="scene-viewer quick-look">
+                  </model-viewer>                  
+                  <section class="attribution">
+                    <span class="desc">
+                        <h2>San Pedro</h1>
+                        <p>Saint Pedro Calungsod (Latin: Petrus Calungsod, Italian: Pietro Calungsod; (July 21, 1654 – April 2, 1672), also known as Peter Calungsod or Pedro Calonsor, is a Roman Catholic.</p>
+                    </span>
+                  </section>                  
+                </div>
+                  <!-- <img class="golden-section3" src="./images/golden__1_.png"> -->
+              </div>
+
+              <div class="col-sm-12 col-md-12 col-lg-4 " >
+                <div id="card">
+                    <model-viewer src="./Models/FinalModels/final_mosses.glb"
+                      ios-src="Bronze_Moses_at_Augustana_University.usdz"
+                      poster="./Models/Posters/mosses.png"
+                      alt="A 3D model of an Mosses"
+                      shadow-intensity="1"
+                      camera-controls
+                      auto-rotate ar-placement="floor" ar ar-modes="scene-viewer quick-look">
+                    </model-viewer>                  
+                    <section class="attribution">
+                      <span class="desc">
+                          <h2>Mosses</h1>
+                          <p>Moses was the leader of the Israelites and lawgiver to whom the authorship, or "acquisition from heaven", of the Torah (the first five books of the Bible) is attributed.</p>
+                      </span>
+                    </section>                  
+                  </div>
+              </div>
+
+              <div class="col-sm-12 col-md-12 col-lg-4" >
+                <div id="card">
+                    <model-viewer src="./Models/FinalModels/final_soviet_coin.glb"
+                      ios-src="Bronze_Moses_at_Augustana_University.usdz"
+                      poster="./Models/Posters/coin.webp"
+                      alt="A 3D model of an Mosses"
+                      shadow-intensity="1"
+                      camera-controls
+                      auto-rotate ar-placement="floor" ar ar-modes="scene-viewer quick-look">
+                    </model-viewer>                  
+                    <section class="attribution">
+                      <span class="desc">
+                          <h2>Last Coin of Soviet Union</h1>
+                          <p>The Soviet ruble (Russian: Рубль) was the currency of the Union of Soviet Socialist Republics (USSR), introduced in 1922, replacing the Imperial Russian ruble.</p>
+                      </span>
+                    </section>                  
+                  </div>
+              </div>
+
+              <div class="col-sm-12 col-md-12 col-lg-4" >
+                <div id="card">
+                    <model-viewer src="./Models/FinalModels/final_indian_pillar.glb"
+                      ios-src="Bronze_Moses_at_Augustana_University.usdz"
+                      poster="./Models/Posters/pillar.webp"
+                      alt="A 3D model of an chinese coin"
+                      shadow-intensity="1"
+                      camera-controls
+                      auto-rotate ar-placement="floor" ar ar-modes="scene-viewer quick-look">
+                    </model-viewer>                  
+                    <section class="attribution">
+                      <span class="desc">
+                          <h2>Ancient Indian temple pillar</h1>
+                          <p>Even today in traditional Hindu temples, a pillar stands in front of the temple, either for the flag, or for lamps, or to simply assert divine authority.</p>
+                      </span>
+                    </section>                  
+                  </div>
+              </div>
+
+              <div class="col-sm-12 col-md-12 col-lg-4" >
+                <div id="card">
+                    <model-viewer src="./Models/FinalModels/final_Agarwot.glb"
+                      ios-src="Bronze_Moses_at_Augustana_University.usdz"
+                      poster="./Models/Posters/agarwot.webp"
+                      alt="A 3D model of an chinese coin"
+                      shadow-intensity="1"
+                      camera-controls
+                      auto-rotate ar-placement="floor" ar ar-modes="scene-viewer quick-look">
+                    </model-viewer>                  
+                    <section class="attribution">
+                      <span class="desc">
+                          <h2>Angkor Wat</h1>
+                          <p>Angkor Wat is a Hindu Temple and A Buddhist Temple complex in northwest Cambodia. A national symbol and sacred site of Cambodian Buddhism and ancient Hinduism, the complex is a UNESCO World Heritage Site.</p>
+                      </span>
+                    </section>                  
+                  </div>
+                </div>
+
+              <div class="col-sm-12 col-md-12 col-lg-4" >
+                <div id="card">
+                    <model-viewer src="./Models/FinalModels/egypt_fish.glb"
+                      ios-src="Bronze_Moses_at_Augustana_University.usdz"
+                      poster="./Models/Posters/fish.webp"
+                      alt="A 3D model of an chinese coin"
+                      shadow-intensity="1"
+                      camera-controls
+                      auto-rotate ar-placement="floor" ar ar-modes="scene-viewer quick-look">
+                    </model-viewer>                  
+                    <section class="attribution">
+                      <span class="desc">
+                          <h2>Ancient Egypt Stone Cravings</h1>
+                          <p> Carving on softer stones was done using copper chisels and stone tools; hard stone required tools of yet harder stone, copper alloys, and the use of abrasive sand to shape them.</p>
+                      </span>
+                    </section>                  
+                  </div>
+              </div>
+
+          </div>        
+      </div>      
+    </section>
+
+    <!-- End of Section 3 and 3d model render -->
+  </div>
+</section>
+
+ <!-- Footer -->
+ <footer class="text-center">
+  <!-- Grid container -->
+  <div class="container">
+    <hr class="my-5" />
+
+    <!-- Section: Text -->
+    <section class="mb-5">
+      <div class="row d-flex justify-content-center">
+        <div class="col-lg-8">
+          <h3>
+            Real <span style="color: gold;">museums</span> are places where the time is transformed into space. 
+          </h3><br>
+          <h4>Orhan Pamuk</h4>
+        </div>
+      </div>
+    </section>
+    <!-- Section: Text -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3">
+    © 2020 Copyright:
+    <a class="text-white" href="#title">Art AR</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+
+
+<script>
+  document.querySelector('.navbar-toggler').addEventListener('click', function(){ 
+    const iconEl = document.getElementsByTagName('I')[0];
+    if(this.getAttribute('aria-expanded')) { 
+      iconEl.classList.toggle('icon-color');
+    };
+  });
+</script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!-- 💁 Include both scripts below to support all browsers! -->
+
+<!-- Loads <model-viewer> for modern browsers: -->
+<script type="module"
+  src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+</script>
+
+<!-- Loads <model-viewer> for old browsers like IE11: -->
+<script nomodule
+  src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
+</script>
+</body>
+</html>

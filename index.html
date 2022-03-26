@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art AR</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/Favicon/favicon-16x16.png">
+    <link rel="manifest" href="./images/Favicon/site.webmanifest">
+    <link rel="mask-icon" href="./images/Favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#000000">
+
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/419c713afb.js"></script>
+    <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
+    <script src="https://unpkg.com/resize-observer-polyfill@1.5.0/dist/ResizeObserver.js"></script>
+<body>
+
+
+<section id="title">
+  <div class="container-fluid">
+  
+  <!-- Navigation Bar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+          <div class="collapse navbar-collapse order-lg-1 order-3 navigation-menu">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                  <a class="nav-link" href="./about.html">About <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./events.html">Events</a>
+                </li>
+              </ul>
+            </div>
+          <a class="navbar-brand order-1 mr-lg-0" href="#">
+              <img src="./images/MainLogo.png" width="90px"  alt="Art AR Logo">
+          </a>
+          <button class="navbar-toggler order-2" type="button" data-toggle="collapse" data-target=".navigation-menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+            <span class="sr-only">Toggle navigation</span>
+          </button>      
+          <div class="collapse navbar-collapse order-lg-3 order-4 navigation-menu">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item ">
+                <a class="nav-link" href="./news.html">News <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./tryNow.html">Try Now</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+  <!-- Navigation Bar -->
+
+  <!-- Section 1 -->
+      <section id="home">
+        <div class="container">
+            <div class="row m-auto">
+                <div class="col-md-6 " >
+                    <h2>Experience the past <br> With a <br> Futuristic View </h2>
+                    <p>Welcome to virtually experience the Ancient Artifacts, Rare Sculptures and Monuments. 
+                      One click gives you a realistic experience and archeological exposure.
+                    </p>
+                    <a href="./tryNow.html" class="btn">Try Now</a>
+                </div>
+
+                <div class="col-md-6  ">
+                    <img class="zeus" src="./images/Layer2.png">
+                </div>
+            </div>        
+        </div>      
+      </section>
+
+      <!-- End of Section 1 -->
+
+      <!-- Section 2 -->
+      <section>
+        <div class="container ">
+            <div class="row reversed m-auto">
+                <div class="col-md-6 order-sm-1 col-md-pull-3 artifacts" >                  
+                    <h2>Rare and Ancient<br>Artifacts at your<br>Home</h2>
+                    <p>Artifact is an object recovered by archaeological endeavor. We have the largest collection of 3D models to render starting from occasional coins to notable Sculptures.
+                    </p>
+                    <a href="https://youtu.be/jlL4aJLs-w0" class="btn">Watch Video</a>
+                </div>  
+                <div class="col-md-6 order-sm-12 col-md-push-9 ">
+                  <!-- <img class="golden" src="./images/golden__1_.png"> -->
+                  <img class="coin" src="./images/coin.PNG">
+                  <img class="coin2" src="./images/coin2.png">
+                  <img class="coin3" src="./images/coin3.png">
+              </div>              
+            </div>        
+        </div>      
+      </section>
+    <!-- End of Section 2 -->
+
+
+    <!-- Section 3 and 3d model render-->
+
+    <section>
+      <div class="container gap">
+          <div class="row">
+              <div class="col-md-6  para-section3" >
+                  <h2>Fast and elegant<br>Web Application to support<br>Cross Platform Devices</h2>
+                  <p>Augment our web app in Android as well as in IOS devices. <br>No installation required, just a hassle - free experience.
+                  <br>Live the History ! </p>
+                  <!-- <a href="#" class="btn">Github</a> -->
+              </div>
+    
+              <div class="col-md-6 ">
+                <div id="card">
+                  <model-viewer src="./Models/FinalModels/final_map_of_the_world.glb"
+                  ios-src=""
+                  poster="./Models/Posters/map.webp"
+                  alt="A 3D model of an astronaut"
+                  shadow-intensity="1"
+                  camera-controls
+                  auto-rotate ar-placement="floor" ar ar-modes="scene-viewer quick-look">
+                  </model-viewer>                  
+                  <section class="attribution">
+                    <span>
+                    </span>
+                  </section>
+                  
+                </div>
+                  <!-- <img class="golden-section3" src="./images/golden__1_.png"> -->
+              </div>
+          </div>        
+      </div>      
+    </section>
+
+    <!-- End of Section 3 and 3d model render -->
+  </div>
+</section>
+
+<!-- Remove the container if you want to extend the Footer to full width. -->
+
+  <!-- Footer -->
+  <footer class="text-center text-white">
+    <!-- Grid container -->
+    <div class="container">
+      <hr class="my-5" />
+
+      <!-- Section: Text -->
+      <section class="mb-5">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-8">
+            <h3>
+              Real <span style="color: gold;">museums</span> are places where the time is transformed into space. 
+            </h3><br>
+            <h4>Orhan Pamuk</h4>
+          </div>
+        </div>
+      </section>
+      <!-- Section: Text -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3">
+      © 2020 Copyright:
+      <a class="text-white" href="#title">Art AR</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+<!-- End of .container -->
+
+
+
+<script>
+  document.querySelector("#model-viewer").addEventListener('ar-status', (event) => {
+    if(event.detail.status === 'failed'){
+      const error = document.querySelector("#error");
+      error.classList.remove('hide');
+      error.addEventListener('transitionend',(event) => {
+        error.classList.add('hide');
+      });
+    }
+  });
+</script>
+
+<script>
+  document.querySelector('.navbar-toggler').addEventListener('click', function(){ 
+    const iconEl = document.getElementsByTagName('I')[0];
+    if(this.getAttribute('aria-expanded')) { 
+      iconEl.classList.toggle('icon-color');
+    };
+  });
+</script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!-- 💁 Include both scripts below to support all browsers! -->
+
+<!-- Loads <model-viewer> for modern browsers: -->
+<script type="module"
+  src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+</script>
+
+<!-- Loads <model-viewer> for old browsers like IE11: -->
+<script nomodule
+  src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
+</script>
+</body>
+</html>
